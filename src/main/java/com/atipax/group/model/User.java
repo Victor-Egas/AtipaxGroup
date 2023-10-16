@@ -1,14 +1,16 @@
 package com.atipax.group.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
-    private Integer code;
     private String name;
-    private String cellphone;
+    private String user;
+    private String password;
 
 }
